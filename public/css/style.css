@@ -1,0 +1,168 @@
+.dashboard {
+  width: calc(100% - 80px);
+  padding: 20px 40px;
+}
+
+.dashboard-main-closed {
+  width: 100%;
+}
+
+.dashboard-main-opened {
+  width: calc(80% - 40px);
+  padding-right: 40px;
+}
+
+.dashboard-sidenav {
+  width: 20%;
+  padding-left: 40px;
+}
+
+.nav-button {
+  background-color: #e81d53;
+  padding: 10px;
+  border-radius: 100%;
+  color: white;
+}
+
+.dashboard-summary-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+@media only screen and (max-width: 680px) {
+  .dashboard-summary-container {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .dashboard-summary-container {
+    grid-template-columns: auto;
+  }
+}
+.dashboard-summary-container .dashboard-summary-item-container {
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  border-radius: 10px;
+}
+.brand-title {
+  margin-left: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+.nav-active {
+  border-right: 2px solid #e81d53;
+  background-color: #f6ebee;
+}
+
+.nav-icons {
+  width: 25px;
+  height: 25px;
+}
+
+.sidenav {
+  padding-top: 20px;
+  width: 20%;
+  border-right: 1px solid #d3d3d3;
+}
+
+.sidenav-item-container:hover {
+  border-right: 2px solid #e81d53;
+  background-color: #f6ebee;
+}
+.sidenav-item-container .sidenav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 30px;
+  margin: 20px 0px;
+}
+
+.input-label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.input-container {
+  margin: 15px 0px;
+}
+
+.input-error {
+  color: red;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.b-right {
+  border-right: 1px solid #d3d3d3;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-purple {
+  color: purple;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
