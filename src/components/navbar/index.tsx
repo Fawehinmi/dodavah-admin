@@ -31,7 +31,7 @@ const SideNav = () => {
         <div
           className={`sidenav-item-container ${
             router.pathname === "/" && "nav-active"
-          }`}
+          } mx-3 rounded-lg `}
         >
           <div className="sidenav-item">
             <AiFillAppstore size={25} />
@@ -45,7 +45,7 @@ const SideNav = () => {
         <div
           className={`sidenav-item-container ${
             router.pathname === "/product" && "nav-active"
-          }`}
+          } mx-3 rounded-lg `}
         >
           <div className="sidenav-item">
             <BsFillBagPlusFill size={25} />
@@ -58,7 +58,7 @@ const SideNav = () => {
         <div
           className={`sidenav-item-container ${
             router.pathname === "/categories" && "nav-active"
-          }`}
+          } mx-3 rounded-lg`}
         >
           <div className="sidenav-item">
             <HiOutlineCollection size={25} />
@@ -71,7 +71,7 @@ const SideNav = () => {
         <div
           className={`sidenav-item-container ${
             router.pathname === "/orders" && "nav-active"
-          }`}
+          } mx-3 rounded-lg `}
         >
           <div className="sidenav-item">
             <HiShoppingCart size={25} />

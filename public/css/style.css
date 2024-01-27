@@ -52,7 +52,6 @@
 }
 
 .nav-active {
-  border-right: 2px solid #e81d53;
   background-color: #f6ebee;
 }
 
@@ -68,7 +67,6 @@
 }
 
 .sidenav-item-container:hover {
-  border-right: 2px solid #e81d53;
   background-color: #f6ebee;
 }
 .sidenav-item-container .sidenav-item {

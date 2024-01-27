@@ -11,7 +11,7 @@ import { ICategory, ICategoryFilter } from "./model";
 
 interface ICategoryState {
   loading: boolean;
-  saveLoading: boolean
+  saveLoading: boolean;
   categories: ICategory[];
   totalRecords: number;
   fetchCategoryPage: (page: ICategoryFilter) => void;
@@ -70,8 +70,7 @@ export const CategoryContextProvider: React.FC<IProps> = ({ children }) => {
   const createQuery = useCreateCategory((res: any) => {});
 
   const fetchCategoryPage = (page: ICategoryFilter) => {
-
-    setLoading(true)
+    setLoading(true);
     fetchPageQuery({
       variables: {
         page: {
@@ -92,16 +91,14 @@ export const CategoryContextProvider: React.FC<IProps> = ({ children }) => {
     if (prod) {
       setCategories([prod, ...categories]);
       setTotalRecords(totalRecords + 1);
-      setSaveLoading(false)
+      setSaveLoading(false);
 
       return prod;
     }
-    setSaveLoading(false)
-
+    setSaveLoading(false);
   };
 
   const updateCategory = async (id: string, category: ICategory) => {
-
     const res = await updateQuery[0]({
       variables: {
         id,
@@ -116,16 +113,15 @@ export const CategoryContextProvider: React.FC<IProps> = ({ children }) => {
         )
       );
 
-      setSaveLoading(false)
+      setSaveLoading(false);
 
       return prod;
     }
-    setSaveLoading(false)
-
+    setSaveLoading(false);
   };
 
   const saveCategory = (values: ICategory, id?: string): Promise<ICategory> => {
-    setSaveLoading(true)
+    setSaveLoading(true);
     if (id) {
       return new Promise((resolve, reject) => {
         let req = updateCategory(id, values);
